@@ -1,8 +1,55 @@
-/* Screens */
-$screen-tablet: 768px;
-$screen-desktop: 1024px;
-$screen-desktop-large: 1280px;
+@mixin flex-row($justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $justify;
+  align-items: $align;
+}
 
+@mixin flex-col($justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex(
+  $justify-content: flex-start,
+  $align-items: stretch,
+  $direction: row,
+  $wrap: nowrap
+) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
+}
+
+@mixin text($size, $weight: 400, $color: black) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  color: $color;
+  @content;
+}
+
+@mixin size($size, $round: false) {
+  width: $size;
+  height: $size;
+  flex-shrink: 0;
+  @if $round {
+    border-radius: 50%;
+  }
+  @content;
+}
+
+@mixin position($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
 
 @mixin media($screen: $screen-desktop) {
   @media screen and (min-width: $screen) {

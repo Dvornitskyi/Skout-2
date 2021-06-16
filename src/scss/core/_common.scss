@@ -1,4 +1,6 @@
-* {
+*,
+*:after,
+*:before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -17,6 +19,10 @@ button {
   cursor: pointer;
 }
 
+button{
+  font-size: $font-size-small-standart-text;
+}
+
 a,
 p,
 h1,
@@ -27,7 +33,7 @@ li{
 a,
 p,
 li{
-  font-family: $font-standart-text;
+  font-family: $color-standart-text;
 }
 
 h1{
@@ -38,20 +44,4 @@ input:active,
 :hover {
   outline: 0;
   outline-offset: 0;
-}
-
-.not-show{
-  display: none;
-}
-
-.all-page-logo{
-  width: 110px;
-  height: 18px;
-  margin: 10px auto 24px;
-}
-@media (min-width: $screen-desktop-large){
-  .all-page-logo{
-    width: 272px;
-    height: 32px;
-  }
 }

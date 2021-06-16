@@ -1,0 +1,279 @@
+.tips {
+    min-width: 375px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0;
+    padding: 0 20px;
+&-area-logo{
+    min-width: 335px;
+    width: 100%;
+    height: 100%;
+    margin: 52px auto 0;
+    border-top: 1.5px solid $color-footer-border;
+    border-bottom: 1.5px solid $color-button-hr;
+}
+&-section {
+    min-width: 335px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+&-first {
+    min-width: 335px;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid $color-button-hr;
+    margin: 0 auto 0;
+}
+&-first-one-letter {
+    margin-left: 16px;
+    font-size: 40px;
+    width: 26px;
+    color: $color-plans-no-active;
+    font-family: 'Actor', sans-serif;
+}
+&-first-text {
+    margin-left: 34px;
+    font-size: $font-size-up-standart-text;
+    min-width: 228px;
+    width: 100%;
+}
+&-area-icon-plus {
+    margin-left: 0px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $color-button-hr;
+    border-radius: 100%;
+    cursor: pointer;
+}
+&-icon-plus {
+    width: 14px;
+    height: 14px;
+    color: $color-button-hr;
+    margin-top: -0.5px;
+    margin-left: -1px;
+}
+&-second {
+    min-width: 335px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1.5px solid $color-button-hr;
+    margin: 0 auto 0;
+    position: relative;
+    display: none;
+}
+&-second-left {
+    min-width: 335px;
+    width: 100%;
+}
+&-second-left-title {
+    margin-top: 24px;
+    font-size: $font-size-small-midlle-text;
+}
+&-second-left-icon {
+    font-size: 117px;
+    padding: 21px;
+    color: $color-plans-no-active;
+    margin: 21px 90px;
+}
+&-area-icon-minus {
+    width: 14px;
+    height: 14px;
+    border: 1px solid $color-button-hr;
+    border-radius: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+&-icon-minus {
+    width: 14px;
+    height: 14px;
+    color: $color-button-hr;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+&-second-right-first-text {
+    font-size: 14px;
+    min-width: 335px;
+    width: 100%;
+    line-height: 24px;
+}
+&-second-right-second-text {
+    margin-top: 20px;
+    font-size: 14px;
+    min-width: 335px;
+    width: 100%;
+    line-height: 24px; 
+}
+&-second-right-i-area {
+    min-width: 335px;
+    width: 100%;
+    height: 100%;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+&-second-right-i {
+    width: 30px;
+    height: 30px;
+ }
+&-second-right-i-text {
+    color: $color-up-gradient;
+    font-size: $font-size-button-and-standart-text;
+    width: 227px;
+    width: 100%;
+}
+}
+@media (min-width: $screen-desktop-large){
+    .tips {
+        max-width: 1440px;
+        width: 100%;
+        height: 1065px;
+        height: 100%;
+        margin: 0 auto 0;
+    &-area-logo{
+        max-width: 1171px;
+        width: 100%;
+        height: 162px;
+        margin: 137px auto 50px;
+        border-top: 1.5px solid $color-footer-border;
+        border-bottom: 1.5px solid $color-button-hr;
+    }
+    &-logo-link{
+        margin-top: 20px;
+        width: 342px;
+        height: 41px;
+    }
+    &-section {
+        max-width: 1171px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    &-first {
+        max-width: 1171px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1.5px solid $color-button-hr;
+        margin: 0 auto 0;
+    }
+    &-first-one-letter {
+        margin-left: 49px;
+        font-size: 110px;
+        width: 37px;
+        color: $color-plans-no-active;
+    }
+    &-first-text {
+        margin-left: 113px;
+        font-size: $font-size-small-midlle-text;
+        width: 292px;
+    }
+    &-area-icon-plus {
+        margin-left: 590px;
+        width: 35px;
+        height: 35px;
+        border: 1px solid $color-button-hr;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    &-icon-plus {
+        width: 18px;
+        height: 18px;
+        color: $color-button-hr;
+        margin-top: 8px;
+        margin-left: 7px;
+        font-size: 18px;
+    }
+    &-second {
+        max-width: 1171px;
+        width: 100%;
+        height: 612px;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1.5px solid $color-button-hr;
+        margin: 0 auto 0;
+        display: none;
+    }
+    &-second-left {
+        width: 370px;
+    }
+    &-second-left-title {
+        margin-top: 50px;
+        font-size: 42px;
+    }
+    &-second-left-icon {
+        margin-top: 42px;
+        font-size: 170px;
+        padding: 50px;
+        color: $color-plans-no-active;
+        margin: 50px 50px;
+    }
+    &-second-right {
+        max-width: 602px;
+        width: 100%;
+        margin-left: 136px;
+    }
+    &-area-icon-minus {
+        width: 35px;
+        height: 35px;
+        margin-left: 574px;
+        border: 1px solid $color-button-hr;
+        border-radius: 100%;
+        margin-top: 57px;
+        cursor: pointer;
+        position: inherit;
+    }
+    &-icon-minus {
+        width: 35px;
+        height: 35px;
+        color: $color-button-hr;
+        margin-top: 8px;
+        margin-left: 0px;
+        font-size: 20px;
+    }
+    &-second-right-first-text {
+        font-size: $font-size-up-standart-text;
+        max-width: 336px;
+        width: 100%;
+        line-height: 24px;
+        text-align: left;
+    }
+    &-second-right-second-text {
+        margin-top: 40px;
+        font-size: $font-size-up-standart-text;
+        max-width: 336px;
+        width: 100%;
+        line-height: 24px; 
+        text-align: left;
+    }
+    &-second-right-i-area {
+        max-width: 450px;
+        width: 100%;
+        height: 30px;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+    &-second-right-i {
+        width: 30px;
+        height: 30px;
+    }
+    &-second-right-i-text {
+        color: $color-up-gradient;
+        margin-left: 20px;
+        width: 100%;
+    }
+    &-second{
+        display: none;
+    }
+    } 
+  }
