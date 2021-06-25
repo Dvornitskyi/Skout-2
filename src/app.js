@@ -1,27 +1,5 @@
 //---sliders
-$(document).ready(function(){
-    $('.plans-slider').slick({
-        mobileFirst: true,
-        arrows: false,
-        dots: false,
-        slidesToShow: 1.2,
-        slidesToScroll: 1,
-        infinite: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        variableWidth: true,
-        variableHeight: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                setting: {
-                    infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                }
-            }
-        ],
-    });
+$(document).ready(function(){npm
     $('.problems-sliders').slick({
         mobileFirst: true,
         arrows: false,
